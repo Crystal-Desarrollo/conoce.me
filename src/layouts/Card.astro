@@ -60,7 +60,7 @@ const { logo, name, description, social, links, style } = Astro.props;
         </p>
         <ul class="w-full max-w-md flex flex-col gap-8">
           {
-            links.map(({ title, url }) => (
+            links.map(({ title, url, icon }) => (
               <li class="w-full">
                 <a
                   target="_blank"
@@ -72,7 +72,7 @@ const { logo, name, description, social, links, style } = Astro.props;
                     style?.links
                   )}
                 >
-                  <i class="ti ti-link text-2xl" />
+                  <i class={`ti text-2xl ${icon ? icon : "ti-link"}`} />
 
                   <span>{title}</span>
                 </a>
