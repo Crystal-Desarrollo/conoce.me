@@ -1,0 +1,30 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Card from "../layouts/Card.astro";
+import Card2 from "../layouts/Card2.astro";
+import Card3 from "../layouts/Card3.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"blog">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+
+const layoutComponents = {
+  Card: Card,
+  Card2: Card2,
+  Card3: Card3,
+};
+
+const LayoutComponent = layoutComponents[post.data.cardLayout];
+---
+
+<LayoutComponent {...post.data}>
+  <Content />
+</LayoutComponent>

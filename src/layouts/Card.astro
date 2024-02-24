@@ -1,0 +1,90 @@
+---
+import Footer from "@/components/Footer.astro";
+import Head from "@/components/Head.astro";
+import Qrcode from "@/components/QRCode.astro";
+import { cn } from "@/utils/cn";
+import { mapBrandToIcon } from "@/utils/icons";
+
+import type { CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { logo, name, description, social, links, style } = Astro.props;
+---
+
+<html lang="es">
+  <Head name={name} />
+  <body
+    class={cn(
+      `bg-gradient-to-r from-indigo-500 to-indigo-900 min-h-screen flex flex-col`,
+      style?.body
+    )}
+  >
+    <main class="flex flex-col justify-center items-center mt-16">
+      <article
+        class="w-ful mx-auto flex flex-col items-center gap-8 px-4 md:px-0"
+      >
+        <header class="flex flex-col items-center gap-4">
+          <img
+            src={`/logos/${logo}`}
+            alt={name}
+            class="w-48 h-48 rounded-full"
+          />
+          <h1 class={cn("font-bold text-7xl", style?.name)}>{name}</h1>
+        </header>
+        <ul
+          class="w-full max-w-md flex flex-row items-center justify-center gap-4 flex-shrink-0"
+        >
+          {
+            Object.entries(social).map(([name, url]) => (
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={url}
+                  class={cn(
+                    "hover:text-gray-200 transition-colors duration-100 ease-in-out text-5xl",
+                    style?.socialIcons
+                  )}
+                >
+                  <i class={`ti ${mapBrandToIcon(name)}`} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <p
+          class={cn("text-center text-lg w-full max-w-3xl", style?.description)}
+        >
+          {description}
+        </p>
+        <ul class="w-full max-w-md flex flex-col gap-8">
+          {
+            links.map(({ title, url }) => (
+              <li class="w-full">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={url}
+                  class={cn(
+                    "w-full bg-white rounded-full px-4 py-4 flex flex-row items-center gap-4 hover:bg-gray-200 transition-colors duration-300 ease-in-out",
+                    "shadow-sm shadow-white text-lg font-bold",
+                    style?.links
+                  )}
+                >
+                  <i class="ti ti-link text-2xl" />
+
+                  <span>{title}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+    </main>
+    <div class="my-8">
+      <Qrcode />
+    </div>
+    <Footer />
+  </body>
+</html>
