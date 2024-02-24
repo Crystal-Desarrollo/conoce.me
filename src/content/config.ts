@@ -6,6 +6,7 @@ const blog = defineCollection({
   schema: z.object({
     cardLayout: z.string().optional(),
     logo: z.string(),
+    favIcon: z.string().optional(),
     name: z.string(),
     description: z.string(),
     social: z.object({
