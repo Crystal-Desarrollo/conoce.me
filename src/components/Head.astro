@@ -4,11 +4,15 @@ import "@fontsource-variable/montserrat";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, name, image, favIcon } = Astro.props;
+
+console.log(name);
 ---
 
 <!-- Global Metadata -->
 <head>
   <slot />
+
+  <title>{name} - Conoce.Me</title>
 
   <meta charset="utf-8" />
   <meta
@@ -40,7 +44,8 @@ const { title, description, name, image, favIcon } = Astro.props;
   <meta property="twitter:title" content={title} />
   <meta property="twitter:description" content={description} />
   <meta property="twitter:image" content={new URL(image, Astro.url)} />
-  <title>{name} - Conoce.Me</title>
+
+  <!-- Styles -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css"

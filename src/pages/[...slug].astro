@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import Card from "../layouts/Card.astro";
 import Card2 from "../layouts/Card2.astro";
 import Card3 from "../layouts/Card3.astro";
+import Card4 from "../layouts/Card4.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -20,6 +21,7 @@ const layoutComponents = {
   Card: Card,
   Card2: Card2,
   Card3: Card3,
+  Card4: Card4,
 };
 
 const LayoutComponent = layoutComponents[post.data.cardLayout];
