@@ -22,37 +22,37 @@ const { logo, name, description, social, links, style } = Astro.props;
   >
     <main class="flex flex-col justify-center items-center mt-16">
       <article
-        class="w-ful mx-auto flex flex-col items-center gap-8 px-4 md:px-0"
+        class="w-full mx-auto flex flex-col items-center gap-8 px-4 md:px-0"
       >
-        <header class="flex flex-col items-center gap-4">
+        <header class="flex flex-col items-center gap-8">
           <img
             src={`/logos/${logo}`}
             alt={name}
             class="w-48 h-48 rounded-full"
           />
           <h1 class={cn("font-bold text-7xl", style?.name)}>{name}</h1>
+          <ul
+            class="w-full max-w-md flex flex-row items-center justify-center gap-4 flex-shrink-0"
+          >
+            {
+              Object.entries(social).map(([name, url]) => (
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={url}
+                    class={cn(
+                      "hover:text-gray-200 transition-colors duration-100 ease-in-out text-5xl",
+                      style?.socialIcons
+                    )}
+                  >
+                    <i class={`ti ${mapBrandToIcon(name)}`} />
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
         </header>
-        <ul
-          class="w-full max-w-md flex flex-row items-center justify-center gap-4 flex-shrink-0"
-        >
-          {
-            Object.entries(social).map(([name, url]) => (
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={url}
-                  class={cn(
-                    "hover:text-gray-200 transition-colors duration-100 ease-in-out text-5xl",
-                    style?.socialIcons
-                  )}
-                >
-                  <i class={`ti ${mapBrandToIcon(name)}`} />
-                </a>
-              </li>
-            ))
-          }
-        </ul>
         <p
           class={cn("text-center text-lg w-full max-w-3xl", style?.description)}
         >
