@@ -9,11 +9,11 @@ import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { logo, name, description, social, links, style } = Astro.props;
+const { logo, name, description, social, favIcon, links, style } = Astro.props;
 ---
 
 <html lang="es">
-  <Head name={name} />
+  <Head name={name} favIcon={favIcon} />
   <body
     class={cn(
       `bg-gradient-to-r from-indigo-500 to-indigo-900 min-h-screen flex flex-col`,

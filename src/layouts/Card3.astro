@@ -9,12 +9,12 @@ import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { logo, name, description, social, links, style, favIcon } = Astro.props;
+const { logo, name, description, social, links, favIcon } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
-  <Head favIcon={favIcon} />
+  <Head name={name} favIcon={favIcon} />
   <title>{name}</title>
 
   <body>
