@@ -8,7 +8,7 @@ const blog = defineCollection({
     logo: z.string(),
     favIcon: z.string().optional(),
     name: z.string(),
-    description: z.string(),
+    description: z.union([z.string(), z.array(z.string())]),
     social: z.object({
       facebook: z.string().optional(),
       instagram: z.string().optional(),
@@ -21,6 +21,7 @@ const blog = defineCollection({
       whatsapp: z.string().optional(),
       maps: z.string().optional(),
       email: z.string().optional(),
+      cbu: z.string().optional(),
     }),
     links: z.array(
       z.object({

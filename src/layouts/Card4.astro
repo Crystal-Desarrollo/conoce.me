@@ -5,7 +5,7 @@ import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { logo, name, description, social, links, style, favIcon } = Astro.props;
+const { logo, name, description, social, favIcon } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,14 +19,7 @@ const { logo, name, description, social, links, style, favIcon } = Astro.props;
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.cdnfonts.com/css/ink-free" rel="stylesheet" />
     <link rel="stylesheet" href="styles/styles.css" />
   </Head>
   <body
@@ -37,32 +30,86 @@ const { logo, name, description, social, links, style, favIcon } = Astro.props;
         <div class="text-center">
           <img
             src={`logos/${logo}`}
-            alt="imagen personal"
+            alt={`Logo de ${name}`}
             class="rounded-circle mx-auto"
             height="250"
             width="250"
           />
         </div>
-        <h4 class="text-center mt-8">¡Nuestros enlaces!</h4>
-        <p class="descripcion text-center my-8">
-          {description}
-        </p>
+        <h4 class="text-center mt-8 font-">{name}</h4>
+        {
+          Array.isArray(description) ? (
+            <ul class="max-w-3xl text-center flex flex-col gap-4 my-8 mx-auto">
+              {description.map((item) => (
+                <li class="descripcion">{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p class="descripcion text-center my-8">{description}</p>
+          )
+        }
 
-        <div class="col-md-4 mb-3 mb-md-0 text-center">
-          <a
-            href="https://www.instagram.com/paquitacrafts/"
-            class="btn btn-primary btn-lg d-block mb-2"
-            ><span class="ti ti-brand-instagram"></span>
-            Instagram</a
-          >
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0 text-center">
-          <a
-            href="https://wa.me/message/G5ELDUBLJ6X4N1"
-            class="btn btn-success btn-lg d-block mb-2"
-            ><span class="ti ti-brand-whatsapp"></span> Nuestro WhatsApp</a
-          >
-        </div>
+        {
+          social.instagram && (
+            <div class="col-md-4 mb-3 mb-md-0 text-center">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={social.instagram}
+                class="btn btn-primary btn-lg d-block mb-2 instagram"
+              >
+                <span class="ti ti-brand-instagram" />
+                Instagram
+              </a>
+            </div>
+          )
+        }
+
+        {
+          social.whatsapp && (
+            <div class="col-md-4 mb-3 mb-md-0 text-center">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={social.whatsapp}
+                class="btn btn-success btn-lg d-block mb-2"
+              >
+                <span class="ti ti-brand-whatsapp" /> WhatsApp
+              </a>
+            </div>
+          )
+        }
+
+        {
+          social.facebook && (
+            <div class="col-md-4 mb-3 mb-md-0 text-center">
+              <a
+                href={social.facebook}
+                class="btn btn-primary btn-lg d-block mb-2"
+              >
+                <span class="ti ti-brand-facebook" /> Facebook
+              </a>
+            </div>
+          )
+        }
+
+        {
+          social.cbu && (
+            <div class="col-md-4 mb-3 mb-md-0 text-center">
+              <button
+                data-cbu-button
+                class="w-full btn btn-success btn-lg d-block mb-2 mercadopago flex flex-row items-center justify-center"
+              >
+                <img
+                  src="https://img.icons8.com/?size=512&id=nTLVtpxsNPaz&format=png"
+                  alt="Icono WhatsApp"
+                  class="mercado-pago inline-block"
+                />
+                Nuestro CBU
+              </button>
+            </div>
+          )
+        }
       </div>
       <footer class="text-center mt-16 mb-0">
         <p class="mb-0">
@@ -104,24 +151,43 @@ const { logo, name, description, social, links, style, favIcon } = Astro.props;
       }
 
       h4 {
-        font-family: "Amatic SC", cursive;
-        font-size: 2.3rem;
+        font-family: "Ink Free", sans-serif;
+        font-size: 4rem;
       }
 
       .descripcion {
-        font-family: "Indie Flower", cursive;
+        font-family: "Ink Free", sans-serif;
         font-size: 1.5rem;
       }
-      .btn-primary:hover {
+
+      .instagram:hover {
         background-color: #e1306c;
         border-color: #e1306c;
         color: #ffffff;
       }
 
-      .btn-primary {
+      .instagram {
         background-color: #e4405f;
         border-color: #e1306c;
         color: #ffffff;
+      }
+
+      .mercadopago:hover {
+        background-color: #808080;
+        border-color: #808080;
+        color: #ffffff;
+      }
+
+      .mercadopago {
+        background-color: #808080;
+        border-color: #808080;
+        color: #ffffff;
+      }
+
+      .mercado-pago {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
       }
 
       @media (max-width: 873px) {
@@ -140,11 +206,11 @@ const { logo, name, description, social, links, style, favIcon } = Astro.props;
           margin-bottom: 1rem;
         }
         .descripcion {
-          font-family: "Indie Flower", cursive;
+          font-family: "Ink Free", sans-serif;
           font-size: 1.3rem;
         }
         h4 {
-          font-family: "Amatic SC", cursive;
+          font-family: "Ink Free", sans-serif;
           font-size: 2rem;
         }
       }
@@ -156,11 +222,11 @@ const { logo, name, description, social, links, style, favIcon } = Astro.props;
           margin-bottom: 1rem;
         }
         .descripcion {
-          font-family: "Indie Flower", cursive;
+          font-family: "Ink Free", sans-serif;
           font-size: 0.9rem;
         }
         h4 {
-          font-family: "Amatic SC", cursive;
+          font-family: "Ink Free", sans-serif;
           font-size: 2rem;
         }
       }
@@ -173,10 +239,25 @@ const { logo, name, description, social, links, style, favIcon } = Astro.props;
       }
 
       .rounded-circle {
-        border: 3px solid #7f8c8d;
+        border: 3px solid #252850;
         overflow: hidden;
         margin-top: 1px;
+        background-color: #252850;
       }
     </style>
+    <script>
+      const CBU = "0000003100060547645432";
+      const cbuButton = document.querySelector("[data-cbu-button]");
+
+      cbuButton?.addEventListener("click", () => {
+        const el = document.createElement("textarea");
+        el.value = CBU;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+        alert("¡El cbu se ha copiado al portapapeles!");
+      });
+    </script>
   </body>
 </html>
