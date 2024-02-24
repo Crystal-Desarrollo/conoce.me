@@ -7,13 +7,15 @@ export function mapBrandToIcon(name) {
     case "facebook":
       return "ti-brand-facebook";
     case "instagram":
-      return;
+      return "ti-brand-instagram";
     case "linkedin":
       return "ti-brand-linkedin";
     case "github":
       return "ti-brand-github";
     case "maps":
       return "ti-pin";
+    case "whatsapp":
+      return "ti-brand-whatsapp";
     default:
       return "ti-link";
   }

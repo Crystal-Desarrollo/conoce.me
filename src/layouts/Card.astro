@@ -32,7 +32,7 @@ const { logo, name, description, social, links, style } = Astro.props;
           />
           <h1 class={cn("font-bold text-7xl", style?.name)}>{name}</h1>
           <ul
-            class="w-full max-w-md flex flex-row items-center justify-center gap-4 flex-shrink-0"
+            class="w-full max-w-md flex flex-row items-center justify-center gap-16 flex-shrink-0"
           >
             {
               Object.entries(social).map(([name, url]) => (
