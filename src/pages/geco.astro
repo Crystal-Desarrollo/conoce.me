@@ -1,0 +1,294 @@
+---
+import Head from "@/components/Head.astro";
+import Logo from "@/assets/geco/img/logo-geco.png";
+import FondoSuperior from "@/assets/geco/img/fondoSuperior.png";
+import FondoInferiorIzquierdo from "@/assets/geco/img/fondoInferiorIzquierdo.png";
+import FondoInferiorDerecho from "@/assets/geco/img/fondoInferiorDerecho.png";
+import favIcon from "@/assets/geco/img/icono.ico";
+---
+
+<!doctype html>
+<html lang="es">
+  <Head name="Geco Constructora" favIcon={favIcon} />
+  <body>
+    <main>
+      <div class="tarjeta">
+        <div class="contenedorImagen">
+          <img
+            src={Logo.src}
+            alt="Logo Geco Constructora"
+            class="imagenPersonal"
+          />
+          <img
+            src={FondoSuperior.src}
+            alt="imagen personal"
+            class="fondoSuperior"
+          />
+        </div>
+
+        <div class="contenedorRedes">
+          <a
+            href="https://maps.app.goo.gl/FPAgaJLf35T7FXNM6"
+            class="redes"
+            target="_blank"
+            ><i class="ti ti-pin-filled ubicacion"></i>
+            ADMINISTRACIÓN</a
+          >
+          <a
+            href="https://api.whatsapp.com/send?phone=+5493884047912&text=¡Hola GECO Constructora, me gustaría consultar por ..."
+            class="redes"
+            target="_blank"
+            ><i class="ti ti-brand-whatsapp ubicacion"></i> WHATSAPP</a
+          >
+          <a
+            style="display: none"
+            href="https://gecosrl.com.ar/"
+            class="redes"
+            target="_blank"><i class="ti ti-world ubicacion"></i> NUESTRA WEB</a
+          >
+          <a
+            href="./src/assets/documents/brochure.pdf"
+            class="redes fondoRojo"
+            target="_blank"
+            >NUESTRO BROCHURE
+          </a>
+        </div>
+
+        <div class="contacto">
+          <img
+            aria-hidden
+            src={FondoInferiorIzquierdo.src}
+            alt=""
+            class="imgIzquierda"
+          />
+          <p>info@gecosrl.com.ar</p>
+          <h3>Jujuy - Argentina</h3>
+          <img
+            aria-hidden
+            src={FondoInferiorDerecho.src}
+            alt=""
+            class="imgDerecha"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Tarjeta Personal Digital hecha por
+        <a href="https://www.crystal-desarrollo.com" target="_blank"
+          >Crystal Desarrollo</a
+        >
+        y diseñada por
+        <a
+          href="https://www.instagram.com/instintocreativojujuy/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+          target="_blank">Instinto Creativo</a
+        >
+      </p>
+    </footer>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+      /*Paleta de colores
+primario: #222831;
+secundario: #393E46;
+terciario: #00ADB5;
+ternario: #00FFF5;
+*/
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222831;
+      }
+
+      main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      main .tarjeta {
+        width: 100%;
+        max-width: 64rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      main .tarjeta .contenedorImagen {
+        width: 100%;
+        height: auto;
+        padding: 3rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      main .tarjeta .contenedorImagen .imagenPersonal {
+        width: 70%;
+        height: auto;
+      }
+
+      main .tarjeta .contenedorImagen .fondoSuperior {
+        width: 10%;
+        right: 0rem;
+        position: absolute;
+      }
+
+      main .contenedorRedes {
+        padding: 1.5rem 0rem;
+        width: 100%;
+        max-width: 64rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+        gap: 1.5rem;
+      }
+
+      main .contenedorRedes .redes {
+        width: 80%;
+        height: auto;
+        padding: 1.5rem;
+        text-decoration: none;
+        border: 0.1rem solid #a91c1d;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #222831;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+
+      main .contenedorRedes .redes .ti-brand-whatsapp {
+        color: #222831;
+        font-size: 2rem;
+        margin: 0rem 1.5rem;
+      }
+
+      main .contenedorRedes .redes .ubicacion {
+        color: #222831;
+        font-size: 2rem;
+        margin: 0rem 1.5rem;
+      }
+
+      main .contenedorRedes .fondoRojo {
+        color: #fff;
+        background-color: #a91c1d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      main .contenedorRedes .redes:hover {
+        background: #a3a2a2;
+        transition: 0.3s all ease;
+      }
+
+      main .contenedorRedes .fondoRojo:hover {
+        background-color: #6a1111;
+        transition: 0.3s all ease;
+      }
+
+      main .tarjeta .contacto {
+        width: 100%;
+        min-height: 15rem;
+        margin: 2.5rem 0rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      main .tarjeta .contacto .imgIzquierda {
+        position: absolute;
+        width: 10%;
+        top: 0rem;
+        left: 0rem;
+      }
+
+      main .tarjeta .contacto .imgDerecha {
+        position: absolute;
+        width: 10%;
+        bottom: 0rem;
+        right: 0rem;
+      }
+
+      main .tarjeta .contacto p {
+        font-size: 2rem;
+        color: #676767;
+      }
+      main .tarjeta .contacto h3 {
+        font-size: 2rem;
+        color: #676767;
+      }
+
+      footer {
+        padding: 2.5rem 1rem;
+        height: 4rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #676767;
+        max-width: 64rem;
+      }
+
+      footer p {
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      footer i {
+        color: #b23d28;
+      }
+
+      footer a {
+        color: white;
+      }
+
+      @media screen and (max-width: 424px) {
+        main .contenedorRedes .redes {
+          font-size: 1.5rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+      @media screen and (max-width: 345px) {
+        main .contenedorRedes .redes .ti-brand-whatsapp {
+          border-radius: 0.5rem;
+        }
+
+        main .contenedorRedes .redes .ubicacion {
+          color: #222831;
+          font-size: 2rem;
+          margin: 0rem 0.5rem;
+        }
+
+        main .tarjeta .contacto p {
+          font-size: 1.5rem;
+        }
+        main .tarjeta .contacto h3 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </body>
+</html>
