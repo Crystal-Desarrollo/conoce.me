@@ -36,27 +36,28 @@ const { logo, name, description, social, favIcon, links, style } = Astro.props;
         class="grid grid-cols-1 md:grid-cols-2 items-stretch max-w-3xl gap-4 px-4 py-6 mx-auto"
       >
         {
-          Object.entries(social).map(([name, url]) => (
-            <li
-              class={cn(
-                "flex flex-col items-center gap-1 border border-gray-200 rounded-lg text-white dark:border-gray-800",
-                "duration-300 hover:scale-105 hover:bg-white hover:text-black",
-                style?.links
-              )}
-            >
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={url}
-                class="w-full p-4 flex items-center justify-center gap-4"
+          social &&
+            Object.entries(social).map(([name, url]) => (
+              <li
+                class={cn(
+                  "flex flex-col items-center gap-1 border border-gray-200 rounded-lg text-white dark:border-gray-800",
+                  "duration-300 hover:scale-105 hover:bg-white hover:text-black",
+                  style?.links
+                )}
               >
-                <h3 class="text-xl font-semibold">{getBrandName(name)}</h3>
-              </a>
-            </li>
-          ))
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={url}
+                  class="w-full p-4 flex items-center justify-center gap-4"
+                >
+                  <h3 class="text-xl font-semibold">{getBrandName(name)}</h3>
+                </a>
+              </li>
+            ))
         }
         {
-          links.map((link) => (
+          links?.map((link) => (
             <li
               class={cn(
                 "flex flex-col items-center gap-1 border border-gray-200 rounded-lg text-white dark:border-gray-800",

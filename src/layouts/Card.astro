@@ -30,13 +30,11 @@ const { logo, name, description, social, favIcon, links, style } = Astro.props;
             alt={name}
             class="w-48 h-48 rounded-full"
           />
-          <h1 class={cn("font-bold text-7xl", style?.name)}>{name}</h1>
-          <ul
-            class="w-full max-w-md flex flex-row items-center justify-center gap-16 flex-shrink-0"
-          >
-            {
-              social &&
-                Object.entries(social).map(([name, url]) => (
+          <h1 class={cn("font-bold text-4xl", style?.name)}>{name}</h1>
+          {
+            social && (
+              <ul class="w-full max-w-md flex flex-row items-center justify-center gap-16 flex-shrink-0">
+                {Object.entries(social).map(([name, url]) => (
                   <li>
                     <a
                       target="_blank"
@@ -50,9 +48,10 @@ const { logo, name, description, social, favIcon, links, style } = Astro.props;
                       <i class={`ti ${mapBrandToIcon(name)}`} />
                     </a>
                   </li>
-                ))
-            }
-          </ul>
+                ))}
+              </ul>
+            )
+          }
         </header>
         <p
           class={cn("text-center text-lg w-full max-w-3xl", style?.description)}

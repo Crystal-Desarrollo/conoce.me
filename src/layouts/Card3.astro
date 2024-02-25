@@ -34,15 +34,16 @@ const { logo, name, description, social, links, favIcon } = Astro.props;
 
         <div class="contenedorRedes">
           {
-            Object.entries(social).map(([name, url]) => (
-              <a href={url} class="redes" target="_blank">
-                <i class={cn("ti link", mapBrandToIcon(name))} />{" "}
-                {getBrandName(name)}
-              </a>
-            ))
+            social &&
+              Object.entries(social).map(([name, url]) => (
+                <a href={url} class="redes" target="_blank">
+                  <i class={cn("ti link", mapBrandToIcon(name))} />{" "}
+                  {getBrandName(name)}
+                </a>
+              ))
           }
           {
-            links.map((link) => (
+            links?.map((link) => (
               <a href={link.url} class="redes" target="_blank">
                 <i class={cn("ti link", link.icon)} />{" "}
                 {getBrandName(link.title)}
