@@ -30,7 +30,7 @@ const { logo, name, description, social, favIcon, links, style } = Astro.props;
             alt={name}
             class="w-48 h-48 rounded-full"
           />
-          <h1 class={cn("font-bold text-4xl", style?.name)}>{name}</h1>
+          <h1 class={cn("font-bold text-xl", style?.name)}>{name}</h1>
           {
             social && (
               <ul class="w-full max-w-md flex flex-row items-center justify-center gap-16 flex-shrink-0">
