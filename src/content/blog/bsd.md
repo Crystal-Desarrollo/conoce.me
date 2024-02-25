@@ -16,6 +16,14 @@ links:
       title: "Nuestro brochure",
       url: "/files/brochure-bsd.pdf",
     },
+    { icon: "", title: "Taller metalúrgico", url: "/bsd-taller" },
+    { icon: "", title: "Recursos Humanos", url: "/bsd-rrhh" },
+    { icon: "", title: "Logística", url: "/bsd-logistica" },
+    {
+      icon: "",
+      title: "Licitaciones y presupuestos",
+      url: "/bsd-licitaciones-presupuestos",
+    },
   ]
 style:
   {

@@ -35,21 +35,22 @@ const { logo, name, description, social, favIcon, links, style } = Astro.props;
             class="w-full max-w-md flex flex-row items-center justify-center gap-16 flex-shrink-0"
           >
             {
-              Object.entries(social).map(([name, url]) => (
-                <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={url}
-                    class={cn(
-                      "hover:text-gray-200 transition-colors duration-100 ease-in-out text-5xl",
-                      style?.socialIcons
-                    )}
-                  >
-                    <i class={`ti ${mapBrandToIcon(name)}`} />
-                  </a>
-                </li>
-              ))
+              social &&
+                Object.entries(social).map(([name, url]) => (
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={url}
+                      class={cn(
+                        "hover:text-gray-200 transition-colors duration-100 ease-in-out text-5xl",
+                        style?.socialIcons
+                      )}
+                    >
+                      <i class={`ti ${mapBrandToIcon(name)}`} />
+                    </a>
+                  </li>
+                ))
             }
           </ul>
         </header>
@@ -60,7 +61,7 @@ const { logo, name, description, social, favIcon, links, style } = Astro.props;
         </p>
         <ul class="w-full max-w-md flex flex-col gap-8">
           {
-            links.map(({ title, url, icon }) => (
+            links?.map(({ title, url, icon }) => (
               <li class="w-full">
                 <a
                   target="_blank"
