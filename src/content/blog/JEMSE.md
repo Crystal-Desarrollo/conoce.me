@@ -11,12 +11,17 @@ links:
     {
       icon: "ti-brand-whatsapp",
       title: "Contáctanos",
-      url: "https://api.whatsapp.com/send?phone=+543884240884&text=Hola!, vi su contacto en conoceme.com.ar y quería ponerme en contacto con ustedes",
+      url: "https://api.whatsapp.com/send?phone=+5493884800034&text=Hola!, vi su contacto en conoceme.com.ar y quería ponerme en contacto con ustedes",
     },
     {
       icon: "ti-video",
       title: "Video de Presentación",
       url: "https://drive.google.com/file/d/12lbq6Kt-Ndwn9RZg-0O4jRtV8EVFHClk/view",
+    },
+    {
+      icon: "ti-video",
+      title: "Jujuy Polo de Desarrollo",
+      url: "https://drive.google.com/drive/folders/1LUkVKHIO37Ann2iCMzp8X8sQb1KEsNBa",
     },
   ]
 style:
