@@ -21,7 +21,7 @@ links:
     {
       icon: "ti-video",
       title: "Jujuy Polo de Desarrollo",
-      url: "https://drive.google.com/drive/folders/1LUkVKHIO37Ann2iCMzp8X8sQb1KEsNBa",
+      url: "https://drive.google.com/file/d/19B_DNupyABfGbIGJAUEHqx0-j03dEBvT/view",
     },
   ]
 style:
