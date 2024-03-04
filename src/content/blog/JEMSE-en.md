@@ -7,11 +7,17 @@ description: "Integration and social responsibility"
 social: {}
 links:
   [
+    { icon: "ti-file-text", title: "Brochure", url: "/files/jemse-canada.pdf" },
     { icon: "ti-brand-gmail", title: "Email", url: "mailto:info@jemse.gob.ar" },
     {
       icon: "ti-brand-whatsapp",
       title: "Get in touch",
       url: "https://api.whatsapp.com/send?phone=+5493884800034&text=¡Hello!, saw your contact in conoceme.com.ar and want to get in touch with you",
+    },
+    {
+      icon: "ti-video",
+      title: "Governor's Message",
+      url: "https://drive.google.com/file/d/1AgWx_ml0XBfileFtVD3qJ3xfvisXJJJu/view?usp=sharing",
     },
     {
       icon: "ti-video",
@@ -21,7 +27,7 @@ links:
     {
       icon: "ti-video",
       title: "Jujuy Development Pole",
-      url: "https://drive.google.com/file/d/19B_DNupyABfGbIGJAUEHqx0-j03dEBvT/view",
+      url: "https://drive.google.com/file/d/1ARC6svghwlRPqlXjBQA4pJRdPeQFNjrh/view?usp=sharing",
     },
   ]
 style:
