@@ -2,8 +2,8 @@
 cardLayout: "Card"
 logo: "logo-bsd.png"
 favIcon: "logos/logo-bsd.png"
-name: "BSD - Recursos Humanos"
-description: "Departamento Recursos Humanos"
+name: "BSD - Jefe de RRHH"
+description: "Sofia Sufi - +54 388 5827974"
 social:
   {
     linkedin: "https://www.linkedin.com/company/bsd-ingenier%C3%ADa-y-servicios/",
@@ -11,13 +11,9 @@ social:
   }
 links:
   [
-    { icon: "ti-mail", title: "Email 1", url: "mailto:rrhh@bsdjujuy.com.ar" },
-    {
-      icon: "ti-mail",
-      title: "Email 2",
-      url: "mailto:mtaussig@bsdjujuy.com.ar",
-    },
-    { icon: "ti-mail", title: "Email 3", url: "mailto:cv@bsdjujuy.com.ar" },
+    { icon: "ti-mail", title: "Email", url: "mailto:ssufi@bsdjujuy.com.ar" },
+
+    { icon: "ti-phone", title: "Teléfono", url: "tel:3885827974" },
   ]
 style:
   {

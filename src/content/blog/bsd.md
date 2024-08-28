@@ -11,19 +11,13 @@ social:
   }
 links:
   [
-    {
-      icon: "ti ti-book",
-      title: "Nuestro brochure",
-      url: "/files/brochure-bsd.pdf",
-    },
-    { icon: "", title: "Taller metalúrgico", url: "/bsd-taller" },
-    { icon: "", title: "Recursos Humanos", url: "/bsd-rrhh" },
-    { icon: "", title: "Logística", url: "/bsd-logistica" },
-    {
-      icon: "",
-      title: "Licitaciones y presupuestos",
-      url: "/bsd-licitaciones-presupuestos",
-    },
+    { icon: "ti ti-book", title: "Brochure", url: "/files/brochure-bsd.pdf" },
+    { icon: "", title: "Gerente de Obra", url: "/bsd-obra" },
+    { icon: "", title: "Jefe de Logística", url: "/bsd-logistica" },
+    { icon: "", title: "Jefe de HSE", url: "/bsd-hse" },
+    { icon: "", title: "Jefe de Compras", url: "/bsd-compras" },
+    { icon: "", title: "Jefe de Mantenimiento", url: "/bsd-mantenimiento" },
+    { icon: "", title: "Jefe RRHH", url: "/bsd-rrhh" },
   ]
 style:
   {

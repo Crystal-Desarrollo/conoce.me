@@ -2,8 +2,8 @@
 cardLayout: "Card"
 logo: "logo-bsd.png"
 favIcon: "logos/logo-bsd.png"
-name: "BSD - Licitaciones y presupuestos"
-description: "Departamento de licitaciones y presupuestos"
+name: "BSD - Jefe de Mantenimiento"
+description: "Cristian Mazzone - +54 388 4674677"
 social:
   {
     linkedin: "https://www.linkedin.com/company/bsd-ingenier%C3%ADa-y-servicios/",
@@ -11,21 +11,9 @@ social:
   }
 links:
   [
-    {
-      icon: "ti-mail",
-      title: "Email 1",
-      url: "mailto:licitaciones@bsdjujuy.com.ar",
-    },
-    {
-      icon: "ti-mail",
-      title: "Email 2",
-      url: "mailto:esarrouf@bsdjujuy.com.ar",
-    },
-    {
-      icon: "ti-mail",
-      title: "Email 3",
-      url: "mailto:jjimenez@bsdjujuy.com.ar",
-    },
+    { icon: "ti-mail", title: "Email", url: "mailto:cmazzone@bsdjujuy.com.ar" },
+
+    { icon: "ti-phone", title: "Teléfono", url: "tel:3884674677" },
   ]
 style:
   {

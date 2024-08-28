@@ -2,8 +2,9 @@
 cardLayout: "Card"
 logo: "logo-bsd.png"
 favIcon: "logos/logo-bsd.png"
-name: "BSD - Taller Metalúrgico"
-description: "Departamento Taller Metalúrgico"
+name: "BSD - Gerente de Obra"
+description: "Nicolás Guerra - +54 388 4039236
+"
 social:
   {
     linkedin: "https://www.linkedin.com/company/bsd-ingenier%C3%ADa-y-servicios/",
@@ -11,17 +12,10 @@ social:
   }
 links:
   [
-    { icon: "ti-mail", title: "Email 1", url: "mailto:taller@bsdjujuy.com.ar" },
-    {
-      icon: "ti-mail",
-      title: "Email 2",
-      url: "mailto:lmolina@bsdjujuy.com.ar",
-    },
-    {
-      icon: "ti-mail",
-      title: "Email 3",
-      url: "mailto:ntulian@bsdjujuy.com.ar",
-    },
+    { icon: "ti-mail", title: "Email", url: "mailto:nguerra@bsdjujuy.com.ar" },
+
+    { icon: "ti-phone", title: "Teléfono", url: "tel:3884039236
+" },
   ]
 style:
   {
