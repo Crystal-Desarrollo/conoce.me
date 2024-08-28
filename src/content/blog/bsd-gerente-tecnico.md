@@ -2,8 +2,8 @@
 cardLayout: "Card"
 logo: "logo-bsd.png"
 favIcon: "logos/logo-bsd.png"
-name: "BSD - HSE"
-description: "Franco Gurrieri - +54 3888 460142"
+name: "BSD - Gerente Técnico"
+description: "Elías Sarrouf - +54 388 5022000"
 social:
   {
     linkedin: "https://www.linkedin.com/company/bsd-ingenier%C3%ADa-y-servicios/",
@@ -11,12 +11,8 @@ social:
   }
 links:
   [
-    {
-      icon: "ti-mail",
-      title: "Email",
-      url: "mailto:fgurrieri@bsdjujuy.com.ar",
-    },
-    { icon: "ti-phone", title: "Teléfono", url: "tel:3888460142" },
+    { icon: "ti-mail", title: "Email", url: "mailto:esarrouf@bsdjujuy.com.ar" },
+    { icon: "ti-phone", title: "Teléfono", url: "tel:3885022000" },
   ]
 style:
   {

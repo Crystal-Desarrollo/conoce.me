@@ -12,6 +12,7 @@ social:
 links:
   [
     { icon: "ti ti-book", title: "Brochure", url: "/files/brochure-bsd.pdf" },
+    { icon: "", title: "Gerente Técnico", url: "/bsd-gerente-tecnico" },
     { icon: "", title: "Gerente de Obra", url: "/bsd-obra" },
     { icon: "", title: "Jefe de Logística", url: "/bsd-logistica" },
     { icon: "", title: "Jefe de HSE", url: "/bsd-hse" },
