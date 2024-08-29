@@ -2,7 +2,7 @@
 cardLayout: "Card"
 logo: "logo-bsd.png"
 favIcon: "logos/logo-bsd.png"
-name: "BSD - Jefe de Logística"
+name: "BSD - Gerente de Obra 2"
 description: "José Hernández - +54 388 4357009"
 social:
   {

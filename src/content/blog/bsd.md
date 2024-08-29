@@ -14,7 +14,7 @@ links:
     { icon: "ti ti-book", title: "Brochure", url: "/files/brochure-bsd.pdf" },
     { icon: "", title: "Gerente Técnico", url: "/bsd-gerente-tecnico" },
     { icon: "", title: "Gerente de Obra", url: "/bsd-obra" },
-    { icon: "", title: "Jefe de Logística", url: "/bsd-logistica" },
+    { icon: "", title: "Gerente de Obra 2", url: "/bsd-logistica" },
     { icon: "", title: "Jefe de HSE", url: "/bsd-hse" },
     { icon: "", title: "Jefe de Compras", url: "/bsd-compras" },
     { icon: "", title: "Jefe de Mantenimiento", url: "/bsd-mantenimiento" },
