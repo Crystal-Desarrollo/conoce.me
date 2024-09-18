@@ -17,7 +17,7 @@ links:
     {
       icon: "ti-video",
       title: "Governor's Message",
-      url: "https://drive.google.com/file/d/1AgWx_ml0XBfileFtVD3qJ3xfvisXJJJu/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1lhacjs-h8YKprCBU6hGy1u-Hd4JUcKgk/view?usp=sharing",
     },
     {
       icon: "ti-video",
