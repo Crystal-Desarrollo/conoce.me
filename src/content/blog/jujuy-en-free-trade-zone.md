@@ -1,7 +1,7 @@
 ---
 cardLayout: "Card3"
 logo: "logo-produccion.png"
-favIcon: ""
+favIcon: "favicon-ministerio-produccion.ico"
 name: "JUJUY"
 description: "Free Trade Zone - Responsible: Sonia Leis"
 social: {}

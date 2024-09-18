@@ -7,13 +7,18 @@ description: "Integration and social responsibility"
 social: {}
 links:
   [
-    { icon: "ti-file-text", title: "Brochure", url: "/files/jemse-canada.pdf" },
+    {
+      icon: "ti-file-text",
+      title: "Brochure",
+      url: "/files/brochure-en-jujuy.pdf",
+    },
     { icon: "ti-brand-gmail", title: "Email", url: "mailto:info@jemse.gob.ar" },
     {
       icon: "ti-brand-whatsapp",
       title: "Get in touch",
       url: "https://api.whatsapp.com/send?phone=+5493884800034&text=¡Hello!, saw your contact in conoceme.com.ar and want to get in touch with you",
     },
+    { icon: "ti-link", title: "Chairman", url: "/exequiel-lello-en" },
   ]
 style:
   {

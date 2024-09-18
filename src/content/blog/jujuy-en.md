@@ -1,7 +1,7 @@
 ---
 cardLayout: "Card3"
 logo: "logo-produccion.png"
-favIcon: ""
+favIcon: "favicon-ministerio-produccion.ico"
 name: "JUJUY"
 description: "Jujuy with the people"
 social: {}
@@ -17,7 +17,11 @@ links: [
       title: "Governor's Message",
       url: "https://drive.google.com/file/d/1lhacjs-h8YKprCBU6hGy1u-Hd4JUcKgk/view?usp=sharing",
     },
-    { icon: "ti-link", title: "Ministry of Production", url: "" },
+    {
+      icon: "ti-link",
+      title: "Ministry of Production",
+      url: "/jujuy-en-production",
+    },
     { icon: "ti-link", title: "JEMSE", url: "/jemse-en" },
     { icon: "ti-link", title: "Knowledge economy", url: "/jujuy-en-knowledge" },
     {

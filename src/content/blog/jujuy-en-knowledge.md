@@ -1,7 +1,7 @@
 ---
 cardLayout: "Card3"
 logo: "logo-produccion.png"
-favIcon: ""
+favIcon: "favicon-ministerio-produccion.ico"
 name: "JUJUY"
 description: "Economy of Knowledge - Responsible: María Belén Castro Agüero"
 social: {}
@@ -10,13 +10,18 @@ links:
     {
       icon: "ti-video",
       title: "Economy of Knowledge",
-      url: "https://drive.google.com/file/d/1P4PmiwAVUGJqXziD2iDUBwp_Sk9iy-tg/view?usp=drive_link",
+      url: "https://drive.google.com/file/d/1-W0ScPVAcVLuEodk7WQlu_7A_E7MJjwT/view?usp=sharing",
     },
     { icon: "ti-brand-gmail", title: "Email", url: "mailto:conocimientojujuy@jujuy.gob.ar" },
     {
       icon: "ti-brand-whatsapp",
       title: "Get in touch",
       url: "https://api.whatsapp.com/send?phone= +5493884415700&text=¡Hello!, saw your contact in conoceme.com.ar and want to get in touch with you",
+    },
+    {
+      icon: "ti-link",
+      title: "Chairman",
+      url: "/belen-castro-en",
     },
 
 
