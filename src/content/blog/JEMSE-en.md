@@ -14,21 +14,6 @@ links:
       title: "Get in touch",
       url: "https://api.whatsapp.com/send?phone=+5493884800034&text=¡Hello!, saw your contact in conoceme.com.ar and want to get in touch with you",
     },
-    {
-      icon: "ti-video",
-      title: "Governor's Message",
-      url: "https://drive.google.com/file/d/1lhacjs-h8YKprCBU6hGy1u-Hd4JUcKgk/view?usp=sharing",
-    },
-    {
-      icon: "ti-video",
-      title: "Presentation Video",
-      url: "https://drive.google.com/file/d/12lbq6Kt-Ndwn9RZg-0O4jRtV8EVFHClk/view",
-    },
-    {
-      icon: "ti-video",
-      title: "Jujuy Development Pole",
-      url: "https://drive.google.com/file/d/1ARC6svghwlRPqlXjBQA4pJRdPeQFNjrh/view?usp=sharing",
-    },
   ]
 style:
   {

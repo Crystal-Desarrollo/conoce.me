@@ -17,17 +17,13 @@ links: [
       title: "Governor's Message",
       url: "https://drive.google.com/file/d/1lhacjs-h8YKprCBU6hGy1u-Hd4JUcKgk/view?usp=sharing",
     },
+    { icon: "ti-link", title: "Ministry of Production", url: "" },
     { icon: "ti-link", title: "JEMSE", url: "/jemse-en" },
     { icon: "ti-link", title: "Knowledge economy", url: "/jujuy-en-knowledge" },
     {
       icon: "ti-link",
-      title: "Industrial Park & Free Trade Zone",
+      title: "Pericos Free Trade Zone & Industrial Park",
       url: "/jujuy-en-free-trade-zone",
-    },
-    {
-      icon: "ti-video",
-      title: "Jujuy Development Pole",
-      url: "https://drive.google.com/file/d/1-wE3-_yH-TOburzmdnvY25KfqvMQzFG4/view?usp=sharing",
     },
   ]
 style:
