@@ -7,11 +7,11 @@ description: "Ministry of Production - Responsible: Juan Carlos Robles Abud"
 social: {}
 links:
   [
-    # {
-    #   icon: "ti-video",
-    #   title: "Oferta Productiva",
-    #   url: "https://drive.google.com/file/d/1-W0ScPVAcVLuEodk7WQlu_7A_E7MJjwT/view?usp=sharing",
-    # },
+    {
+      icon: "ti-video",
+      title: "Productive Offer",
+      url: "https://youtu.be/I9yv4JZxYGw?si=j4udM8ygw9MtAe7v",
+    },
     { icon: "ti-brand-gmail", title: "Email", url: "mailto:privadoproduccion.jujuy@gmail.com" },
     {
       icon: "ti-brand-whatsapp",
