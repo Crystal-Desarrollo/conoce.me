@@ -10,7 +10,7 @@ links:
     {
       icon: "ti-video",
       title: "Productive Offer",
-      url: "https://youtu.be/I9yv4JZxYGw?si=j4udM8ygw9MtAe7v",
+      url: "https://drive.google.com/file/d/1oTTclP7vASjPvkPbXSjzeCKEee9AOzu7/view?usp=sharing",
     },
     { icon: "ti-brand-gmail", title: "Email", url: "mailto:privadoproduccion.jujuy@gmail.com" },
     {
