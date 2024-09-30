@@ -6,20 +6,19 @@ name: "Agustin Cáceres"
 description: "Dematología y medicina estética"
 social:
   {
-    instagram: "https://www.instagram.com/dr.agustin_caceres/?hl=es-la",
-    maps: "https://goo.gl/maps/e53L4ooK1jX7WU5t8",
+    instagram: "https://www.instagram.com/dr.agustincaceres/",
   }
 links:
   [
     {
       icon: "ti-brand-whatsapp",
-      title: "Whatsapp 1",
-      url: "https://api.whatsapp.com/send?phone=+5491124817713&text=¡Hola!, vi tu contacto a través de tu tarjeta personal",
+      title: "WhatsApp",
+      url: "https://api.whatsapp.com/send?phone=+5491140396375&text=¡Hola!, vi tu contacto a través de tu tarjeta personal",
     },
     {
-      icon: "ti-brand-whatsapp",
-      title: "Whatsapp 2",
-      url: "https://api.whatsapp.com/send?phone=+5491168891414&text=¡Hola!, vi tu contacto a través de tu tarjeta personal",
+      icon: "ti-gps",
+      title: "Ortiz de Ocampo 2561 Piso 14 E - Recoleta",
+      url: "https://maps.app.goo.gl/e7tJ4yW4qSHkJLBz6",
     },
   ]
 style:
