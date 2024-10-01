@@ -16,7 +16,7 @@ links:
     {
       icon: "ti-brand-whatsapp",
       title: "Get in touch",
-      url: "https://api.whatsapp.com/send?phone= +54938854263711&text=¡Hello!, saw your contact in conoceme.com.ar and want to get in touch with you",
+      url: "https://api.whatsapp.com/send?phone= +5493884049650&text=¡Hello!, saw your contact in conoceme.com.ar and want to get in touch with you",
     },
     {
       icon: "ti-link",
