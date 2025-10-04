@@ -16,6 +16,11 @@ links:
       title: "Resume",
       url: "/files/sonia-leis-resume.pdf",
     },
+        {
+      icon: "ti-file-text",
+      title: "JEMSE Brochure",
+      url: "/files/brochure-en-jujuy.pdf",
+    },
     { icon: "ti-brand-gmail", title: "Email", url: "mailto:sleis@zfpj.com.ar" },
     {
       icon: "ti-brand-whatsapp",
